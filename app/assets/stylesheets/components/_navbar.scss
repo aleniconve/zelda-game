@@ -1,0 +1,24 @@
+// .navbar {
+//   width: 100%;
+//   height: 100px;
+//   background-color: gold;
+//   border-radius: 5px;
+
+// }
+
+.navbar {
+  width: 100%;
+  height: 10px;
+  background-color: #674D36;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 5px 4px 0 rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

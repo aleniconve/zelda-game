@@ -1,0 +1,15 @@
+.footer {
+  width: calc(100% - 40px); /* Adjusted width to fit within the container */
+  height: 10px; /* Example height using percentage */
+  background-color: rgba(90, 112, 24, 0.5);
+  padding: 20px;
+  margin: 0 auto; /* Center the footer horizontally within the container */
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+

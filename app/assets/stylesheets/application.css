@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "pages/gamequiz";
+ @import "components/navbar";
+ @import "components/avatar";
+ @import "components/footer";
+
+ body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: hidden;
+}

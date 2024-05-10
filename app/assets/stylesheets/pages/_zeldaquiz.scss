@@ -1,0 +1,27 @@
+body {
+  background-image: url('wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  background-color: #87A52B;
+  font-family: 'The Wild Breath of Zelda', sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 10%; /* Adjusted height for smaller screens */
+  }
+  .footer {
+    height: 10%; /* Adjusted height for smaller screens */
+  }
+}

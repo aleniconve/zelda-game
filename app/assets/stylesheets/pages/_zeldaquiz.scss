@@ -7,7 +7,6 @@ body {
   position: relative;
   background-color: #87A52B;
   font-family: 'The Wild Breath of Zelda', sans-serif;
-  // font-size: x-large;
 }
 
 .container {
@@ -17,12 +16,223 @@ body {
   min-height: 100vh;
 }
 
+// /* Media Queries */
+// @media screen and (max-width: 768px) {
+//   .navbar {
+//     height: 10%; /* Adjusted height for smaller screens */
+//   }
+//   .footer {
+//     height: 10%; /* Adjusted height for smaller screens */
+//   }
+// }
+
+.score {
+  // background-size: cover;
+  // background-position: center;
+  // height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #00000033;
+  // border-radius: 5px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 70px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+.score .now {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100px;
+  background-color: rgba(248, 244, 244, 0.5);
+  border: solid black;
+}
+
+.score .top {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100px;
+  background-color: rgba(248, 244, 244, 0.5);
+  border: solid black;
+}
+
+.score .top p {
+  padding-block-start: 1px;
+  padding-block-end: 1px;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+}
+
+.score .now p {
+  padding-block-start: 1px;
+  padding-block-end: 1px;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+
+}
+
+.game-screen {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.guess-image {
+  width: 80%;
+  max-width: 850px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.guess-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.life {
+  color: red;
+  padding: 5px;
+  background-color: rgba(248, 244, 244, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid black;
+}
+
+.life i {
+  padding: 5px;
+}
+
+.image-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gold;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.image-button img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  // margin-right: 10px; /* Adjust as needed */
+}
+
+
+.game-keyboard {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.game-keyboard p {
+  margin-left: 15px;
+}
+
+.log {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .navbar {
-    height: 10%; /* Adjusted height for smaller screens */
+  .navbar h1 {
+    font-size: 1.5em;
   }
-  .footer {
-    height: 10%; /* Adjusted height for smaller screens */
+  .score {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .game-screen {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .game-keyboard {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .log {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .score .now, .score .top {
+    width: 80px;
+    font-size: 20px;
+  }
+  .game-screen {
+    font-size: 18px;
+  }
+  .game-keyboard {
+    font-size: 18px;
+    height: 80px;
+  }
+  .log {
+    font-size: 18px;
+    height: 80px;
   }
 }

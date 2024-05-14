@@ -30,6 +30,8 @@ gem "sass"
 
 gem 'sassc', '~> 2.4'
 
+gem 'webpacker', '~> 5.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

@@ -16,20 +16,7 @@ body {
   min-height: 100vh;
 }
 
-// /* Media Queries */
-// @media screen and (max-width: 768px) {
-//   .navbar {
-//     height: 10%; /* Adjusted height for smaller screens */
-//   }
-//   .footer {
-//     height: 10%; /* Adjusted height for smaller screens */
-//   }
-// }
-
 .score {
-  // background-size: cover;
-  // background-position: center;
-  // height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,8 +33,6 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
-
-
 
 .score .now {
   text-align: center;
@@ -79,7 +64,6 @@ body {
   padding-block-end: 1px;
   margin-block-start: 1px;
   margin-block-end: 1px;
-
 }
 
 .game-screen {
@@ -144,11 +128,10 @@ body {
 }
 
 .image-button img {
-  width: 50px; /* Adjust as needed */
-  height: 50px; /* Adjust as needed */
-  // margin-right: 10px; /* Adjust as needed */
+  width: 50px;
+  height: 50px;
+  // margin-right: 10px;
 }
-
 
 .game-keyboard {
   background-size: cover;

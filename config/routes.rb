@@ -7,7 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "about", to: "pages#about"
+  get 'zeldaquiz', to: 'pages#zeldaquiz', as: 'zeldaquiz'
 
-  get "zeldaquiz", to: "pages#zeldaquiz"
+  # Nest the about route under zeldaquiz
+  get 'zeldaquiz/about', to: 'pages#about', as: 'zeldaquiz_about'
 end

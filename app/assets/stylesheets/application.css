@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @import "pages/gamequiz";
+ @import "pages/zeldaquiz";
  @import "components/navbar";
  @import "components/avatar";
  @import "components/footer";

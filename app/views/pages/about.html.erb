@@ -1,6 +1,40 @@
-<h1> Welcome to the Zelda Game</h1>
-<p>I decided to do this page to practice my skills creating in the digital world</p>
-<p>If you like it...I happy to hear it! Then if you think that a friend would enjoy it, please share it</p>
-<p>If you don't like it...I understand! Then share it to your enemies</p>
+<div class="container-about">
 
-<p>DISCLAIMER!!! One little thing. I don't own any property of Zelda or Nintendo's games. I will not charge or make any money out of this game. Again, it is just for practicing. Nintendo don't get mad! I just love the Zelda universe so much :)</p>
+  <div class="fairy">
+    <div class="wings"></div>
+    <div class="glow">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+  </div>
+
+  <div class="about">
+    <h1>About</h1>
+    <h2>Welcome to the Zelda Quiz</h2>
+    <h3>Disclaimer</h3>
+
+
+    <p>I decided to do this page to practice my skills creating in the digital world
+    <br>If you like it...Please share it!
+    <br>If you don't like it...Share it to your enemies👹</p>
+    <p>I don't own any type of property of Zelda or Nintendo's games.<br>I will not charge or make any money out of this game. <br> Nintendo... don't get mad! <br>I just love the Zelda universe so much :)</p>
+  </div>
+  <div class="button-back">
+      <%= link_to zeldaquiz_path, class: "triforce-button", id: "go-back-button" do %>
+      <%= image_tag("triforce.png", alt: "Go Back") %>
+      Go Back
+    <% end %>
+  </div>
+</div>
+
+<audio id="sound" src="<%= asset_path('secret.wav') %>" autoplay></audio>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('sound');
+    audio.play();
+});
+</script>

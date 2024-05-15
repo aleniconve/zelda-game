@@ -22,16 +22,15 @@
 
   <div class="game-screen">
     <div class="guess-image">
-      <img src="<%= asset_path("wallpaper.jpg") %>" alt="Hyrule">
+      <%= image_tag get_random_image %>
     </div>
   </div>
-
 
   <div class="game-keyboard">
     <button class="image-button">
     <img src="<%= asset_path("triforce.png") %>" alt="Button Image">
     </button>
-    <p>Press here to play!</p>
+    <p>Use the Triforce to play!</p>
   </div>
 
   <div class="log">
@@ -46,4 +45,5 @@
   </a>
   <%= link_to "About", zeldaquiz_about_path, class: "btn-about" %>
   <p>Created in 2024</p>
+
 </div>
